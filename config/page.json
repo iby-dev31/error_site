@@ -1,0 +1,12 @@
+{
+    "pages": [
+        {
+            "id": "back",
+            "url": "https://strengthinlove.com",
+            "icon": "bi bi-house-fill",
+            "name": "Назад",
+            "order": 1,
+            "active": true
+        }
+    ]
+}

@@ -1,0 +1,533 @@
+:root {
+    --background-color:#fff;
+    --background-color-element: #000;
+    --color-text: #000;
+    --color-text-element: #fff;
+    --accent: #716eff;
+    --accent-defaut: #fff;
+    --accent-text:#fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Mobile_Mode h1, .Mobile_Mode h2, .Mobile_Mode h3 {
+    text-align: center;
+}
+
+.Mobile_Mode .icon {
+    font-size: 100px;
+}
+
+.Mobile_Mode h2 {
+    font-size: 30px;
+}
+
+.Mobile_Mode h3 {
+    font-size: 25px;
+}
+
+.Mobile_Mode p {
+    text-align: center;
+    padding: 10px 10%;
+    font-size: 20px;
+}
+
+.Mobile_Mode a {
+    text-decoration: none;
+}
+
+.Mobile_Mode button {
+    display: block;
+    background: var(--background-color-element);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--color-text-element);
+    width: 50%;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.Mobile_Mode {
+    display: none;
+}
+
+.PC_Mode {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background: url('/media/image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding-top: 90px;
+}
+
+main {
+    min-height: 600px;
+}
+
+.block_main {
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    width: 90%;
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 25px;
+    min-height: auto;
+}
+
+.welcome {
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    color: var(--color-text-element);
+    width: 90%;
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.welcome h2, .welcome h3 {
+    text-align: center;
+}
+
+.welcome a {
+    color: var(--color-text-element);
+}
+
+.welcome a:hover {
+    text-decoration: none;
+}
+
+.welcome div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome div div {
+    width: 40%;
+    padding: 10px;
+    display: block;
+}
+
+.welcome div div .biblia {
+    text-align: end;
+}
+
+h2 {
+    text-align: center;
+}
+
+.biblia_book {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.biblia_book div {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.biblia_book div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.biblia_book div img {
+    width: 50%;
+}
+
+button {
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    color: #fff;
+    min-width: 150px;
+    min-height: 50px;
+    transition: 0.3s;
+}
+
+button i {
+    color: var(--accent);
+}
+
+button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    color: var(--color-text-element);
+}
+
+.app button {
+    background: var(--background-color);
+    color: var(--color-text);
+}
+
+.app button:hover {
+    background: var(--accent);
+    color: var(--accent-defaut);
+}
+
+#catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+#catalog div {
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 25px;
+    color: var(--color-text-element);
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#catalog i {
+    color: var(--accent);
+}
+
+#catalog img {
+    width: 150px;
+    height: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 90px;
+    border: 2px solid var(--background-color);
+}
+
+#catalog button {
+    background: none;
+    color: #fff;
+    width: 100%;
+}
+
+#catalog button:hover {
+    background: #fff;
+    color: #000;
+}
+
+#catalog p {
+    font-size: 14px;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-element) transparent;
+}
+
+#catalog p::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+#catalog p::-webkit-scrollbar-thumb {
+    background: var(--color-text-element);
+    border-radius: 4px;
+}
+
+#catalog p::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+#catalog p::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+#catalog p::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+#catalog h3 {
+    text-align: center;
+}
+
+embed {
+    display: inline-block;
+}
+.pdf_file {
+    text-align: center;
+}
+
+.error {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error div {
+    font-size: 60px;
+}
+
+.content_div {
+    width: 80%;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+.content_div, .content_div a {
+    color: var(--color-text-element);
+}
+
+.content_div a:hover {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+th {
+    border-bottom: 2px solid #fff;
+}
+
+.about_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+.about_div div {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #fff;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 25px;
+    color: var(--color-text-element);
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_div div .icon_about {
+    border: 1px solid var(--color-text-element);
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.about_div div p {
+    text-align: center;
+    margin: 5px;
+}
+
+.cookie {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    color: var(--color-text-element);
+    width: 96%;
+    left: 2%;
+    right: 2%;
+    bottom: 10px;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid var(--background-color);
+    z-index: 9999;
+}
+
+.cookie div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cookie button {
+    background: none;
+    color: #fff;
+}
+
+.cookie button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.cookie a {
+    color: var(--color-text-element);
+}
+
+.cookie a:hover {
+    text-decoration: none;
+}
+
+select {
+    appearance: none; /* Убираем стандартную стрелку */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: none;
+    border: 2px solid #fff;
+    min-height: 35px;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 25px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+select:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (min-width: 801px) {
+  .PC_Mode {
+    display: block !important;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+    .PC_Mode {
+        display: none;
+    }
+    
+    .Mobile_Mode {
+        display: block;
+    } 
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        height: 500px;
+        overflow: scroll;
+        width: 98%;
+    }
+
+    .welcome div {
+        display: block;
+    }
+
+    .welcome div div {
+        width: 100%;
+    }
+
+    .block_main {
+        width: 98%;
+    }
+
+    .biblia_book {
+        display: block;
+    }
+
+    .biblia_book div {
+        width: 100%;
+    }
+
+    .app {
+        display: block;
+        width: 98%;
+    }
+
+    .app .div_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_text {
+        display: none;
+    }
+
+    select {
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+.messen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.games {
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.games p {
+    text-align: center;
+}
+
+.games div {
+    display: flex;
+}
+
+.games button {
+    width: 50%;
+    min-height: 50px;
+    height: auto;
+}
