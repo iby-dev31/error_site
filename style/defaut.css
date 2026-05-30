@@ -62,7 +62,7 @@
 }
 
 body {
-    background: url('/media/image/background.png');
+    background: url('media/image/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
